@@ -1,0 +1,206 @@
+Algoritmo "urna22"
+
+Var
+// Seção de Declarações das variáveis 
+i,voto, branco,nulo,candidato1,candidato2,candidato3,candidato4,candidato5,candidato6 : inteiro
+s, resp: caracter
+
+
+  
+
+
+
+Inicio
+// Seção de Comandos, procedimento, funções, operadores, etc... 
+   para i de 1 ate 1000 faca
+
+
+
+
+      escreva("Eleicoes 2022")
+      escreval
+      escreval
+      escreva("Lista de candidatos")
+      escreval
+      escreval
+      
+      escreva("22 - Jair Bolsonaro")
+      escreval
+      
+		escreva("12 - Ciro Gomes")
+      escreval
+      
+		escreva("13 - Lula")
+		escreval
+
+		escreva("15 - Simone Tebet")
+		escreval
+		
+		escreva("44 - Soraya Thronicke")
+		escreval
+
+		escreva("30 - Felipe D'Avila")
+		escreval
+		
+		escreva("00 - Voto em branco")
+		escreval
+		        escreval
+		        escreval
+		        
+		        
+		escreva("Digite o número do seu candidato: ")
+		leia(voto)
+
+
+
+
+            escreval
+            escreval("Para Confirmar seu voto digite s")
+            escreval
+            escreval("Caso tenha encerrado a votação com 99, pressione s para encerrar a votacao")
+
+
+            escreval("Confirma seu voto?")
+            leia(resp)
+            
+            limpatela
+             se (voto=99) e (resp="s") entao
+              escreva("O candidato Jair Bolsonaro teve: ",candidato1,"votos")
+              escreval
+              escreva("O candidato Ciro Gomes teve: ",candidato2,"votos")
+              escreval
+              escreva("O candidato Lula teve: ",candidato3,"votos")
+              escreval
+              escreva("O candidato Simone Tebet teve: ",candidato4,"votos")
+              escreval
+              escreva("O candidato Soraya Thronicke teve: ",candidato5,"votos")
+              escreval
+              escreva("O candidato Felipe D'Avila teve: ",candidato6,"votos")
+              escreval
+              escreva("Votos em branco no total de: ",branco,"votos")
+              escreval
+              escreva("Votos nulos no total de: ",nulo,"votos")
+              escreval
+
+                             se (candidato1>candidato2) e (candidato1>candidato3) e (candidato1>candidato4) e (candidato1>candidato5) e (candidato1>candidato6) entao
+                          escreval("Jair Bolsonaro Eleito")
+                          senao
+                          se (candidato2>candidato1) e (candidato2>candidato3) e (candidato2>candidato4) e (candidato2>candidato5) e (candidato2>candidato6) entao
+                          escreval("Ciro Gomes eleito")
+                          senao
+                          se (candidato3>candidato2) e (candidato3>candidato1) e (candidato3>candidato4) e (candidato3>candidato5) e (candidato3>candidato6) entao
+                          escreval("Lula Eleito")
+                          senao
+                          se (candidato4>candidato2) e (candidato4>candidato3) e (candidato4>candidato1) e (candidato4>candidato5) e (candidato4>candidato6) entao
+                          escreval("Simone Tebet Eleita")
+                          senao
+                          se (candidato5>candidato2) e (candidato5>candidato3) e (candidato5>candidato4) e (candidato5>candidato1) e (candidato5>candidato6) entao
+                          escreval("Soraya Thronicke Eleita")
+                          senao
+                          se (candidato6>candidato2) e (candidato6>candidato3) e (candidato6>candidato4) e (candidato6>candidato5) e (candidato6>candidato1) entao
+                          escreval("Felipe D'Avila Eleito")
+                          senao
+                          escreval("Será realizado uma recontagem dos votos")
+                          fimse
+                          fimse
+                          fimse
+                          fimse
+                          fimse
+                          fimse
+
+                             fimalgoritmo
+             senao
+             se (voto=22) e (resp="s") entao
+             candidato1 <- candidato1+1
+             senao
+             se (voto=12) e (resp="s") entao
+             candidato2 <- candidato2+1
+             senao
+             se(voto=13) e (resp="s") entao
+             candidato3 <- candidato3+1
+             senao
+             se(voto=15) e (resp="s") entao
+             candidato4 <- candidato4+1
+             senao
+             se(voto=44) e (resp="s") entao
+             candidato5 <- candidato5+1
+             senao
+             se(voto=30) e (resp="s") entao
+             candidato6 <- candidato6+1
+             senao
+
+
+                                                  
+             se(voto=00) e (resp="s") entao
+             branco <- branco+1
+             senao
+
+             nulo<- nulo+1
+
+
+             fimse
+             fimse
+             fimse
+             fimse
+             fimse
+             fimse
+             fimse
+
+             fimse
+
+
+             fimpara
+
+
+
+                        
+                        
+
+                        
+  escreva("O candidato Jair Bolsonaro teve: ",candidato1,"votos")
+  escreval
+  escreva("O candidato Ciro Gomes teve: ",candidato2,"votos")
+  escreval
+  escreva("O candidato Lula teve: ",candidato3,"votos")
+  escreval
+  escreva("O candidato Simone Tebet teve: ",candidato4,"votos")
+  escreval
+  escreva("O candidato Soraya Thronicke teve: ",candidato5,"votos")
+  escreval
+  escreva("O candidato Felipe D'Avila teve: ",candidato6,"votos")
+  escreval
+  escreva("Votos em branco no total de: ",branco,"votos")
+  escreval
+  escreva("Votos nulos no total de: ",nulo,"votos")
+  escreval
+  escreval
+
+  se (candidato1>candidato2) e (candidato1>candidato3) e (candidato1>candidato4) e (candidato1>candidato5) e (candidato1>candidato6) entao
+  escreval("Jair Bolsonaro Eleito")
+  senao
+  se (candidato2>candidato1) e (candidato2>candidato3) e (candidato2>candidato4) e (candidato2>candidato5) e (candidato2>candidato6) entao
+  escreval("Ciro Gomes eleito")
+  senao
+  se (candidato3>candidato2) e (candidato3>candidato1) e (candidato3>candidato4) e (candidato3>candidato5) e (candidato3>candidato6) entao
+  escreval("Lula Eleito")
+  senao
+  se (candidato4>candidato2) e (candidato4>candidato3) e (candidato4>candidato1) e (candidato4>candidato5) e (candidato4>candidato6) entao
+  escreval("Simone Tebet Eleita")
+  senao
+  se (candidato5>candidato2) e (candidato5>candidato3) e (candidato5>candidato4) e (candidato5>candidato1) e (candidato5>candidato6) entao
+  escreval("Soraya Thronicke Eleita")
+  senao
+  se (candidato6>candidato2) e (candidato6>candidato3) e (candidato6>candidato4) e (candidato6>candidato5) e (candidato6>candidato1) entao
+  escreval("Felipe D'Avila Eleito")
+  senao
+  escreval("Será realizado uma recontagem dos votos")
+  fimse
+  fimse
+  fimse
+  fimse
+  fimse
+  fimse
+
+
+
+Fimalgoritmo
